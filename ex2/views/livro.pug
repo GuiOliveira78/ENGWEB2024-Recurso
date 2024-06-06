@@ -1,0 +1,90 @@
+extends layout 
+
+block content
+    .w3-card-4
+        header.w3-container.w3-teal
+            h1 Livro #{livro.title}
+        br
+        .w3-container
+            ul.w3-ul.w3-card-4(style="width:100%")
+                li
+                    b ID: 
+                    span= livro._id
+                li
+                    b Title: 
+                    span= livro.title
+                li
+                    b Series: 
+                    span= livro.series
+                li
+                    b Author: 
+                    span= livro.author
+                li
+                    b Rating: 
+                    span= livro.rating
+                li
+                    b Description: 
+                    span= livro.description
+                li
+                    b Language: 
+                    span= livro.language
+                li
+                    b ISBN: 
+                    span= livro.isbn
+                li
+                    b Genres: 
+                    span= livro.genres
+                li
+                    b Characters: 
+                    span= livro.characters
+                li
+                    b Book Format: 
+                    span= livro.bookFormat
+                li
+                    b Edition: 
+                    span= livro.edition
+                li
+                    b Pages: 
+                    span= livro.pages
+                li
+                    b Publisher: 
+                    span= livro.publisher
+                li
+                    b Publish Date: 
+                    span= livro.publishDate
+                li
+                    b First Publish Date: 
+                    span= livro.firstPublishDate
+                li
+                    b Awards: 
+                    span= livro.awards 
+                li
+                    b Num Ratings: 
+                    span= livro.numRatings
+                li
+                    b Rating By Stars:
+                    span= livro.ratingByStars
+                li
+                    b likedPercent: 
+                    span= livro.likedPercent
+                li
+                    b Setting: 
+                    span= livro.setting
+                li
+                    b Cover Image: 
+                    img(src=livro.coverImage, alt="Cover Image", style="width:100px;height:auto;")
+                li
+                    b BBE Score: 
+                    span= livro.bbeScore
+                li
+                    b BBE Votes: 
+                    span= livro.bbeVotes
+                li
+                    b Price: 
+                    span= livro.price
+        br
+        footer.w3-container.w3-blue 
+            h5 
+                span Gerado por Guilherme Oliveira in #{data} - [
+                    a(href="/")  Voltar
+                span  ] 

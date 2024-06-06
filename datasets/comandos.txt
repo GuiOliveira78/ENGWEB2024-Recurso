@@ -1,0 +1,2 @@
+Import:
+mongoimport -d livros -c livros /Users/gui_oliveira/Desktop/UM/2º Semestre/EW/Recurso/ENGWEB2024-Recurso/datasets/dataset.json --jsonArray
